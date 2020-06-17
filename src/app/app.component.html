@@ -1,0 +1,12 @@
+<!--aqui va el nombre de la etiqueta del ts-->
+<saludar-app [nombre]="name" (saludar)="onSaludar($event)"></saludar-app>
+<!--aqui lo que se hace es darle un valor a la variable
+dando valides al input, ya que esta esperando el dato de este archivo-->
+
+<!--se quita lo que le daba valor a la variable y se agrega la variable que esta en el 
+componente padre, en otras palabras sustituyes rafita por name pero con comillas simples
+y la variable nombre entre corchetes para que funcione el property binding debe estar asi
+recordando que la variable nombre pertenece a saludar.component.ts-->
+
+<!--Ahora se manda a traer el evento en la etiqueta, pero recuerda, cuando lleva parentesis significa que 
+envia información de adentro hacia afuera, y cuando son corchetes es a la inversa-->
