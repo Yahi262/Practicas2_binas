@@ -5,6 +5,7 @@ import{FormsModule}from '@angular/forms';
 //debes de borrar esto y en el imports
 import { AppComponent } from './app.component';
 import {SaludarComponent } from './componentes/saludar.component';
+import { FormAppComponent } from './form-app/form-app.component';
 //el import de saludar viene de la clase que se va a usar
 //aqui se usa esa clase que se hizo publica en el ts (export)
 
@@ -13,7 +14,8 @@ import {SaludarComponent } from './componentes/saludar.component';
     //aqui se declaran los componentes 
     //que se van a usar para todo el proyecto
     AppComponent,
-    SaludarComponent
+    SaludarComponent,
+    FormAppComponent
   ],
   imports: [
     BrowserModule,

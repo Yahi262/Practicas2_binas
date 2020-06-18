@@ -10,6 +10,8 @@
 
 <h1>Saludar Commponent</h1>
 <div *ngIf="nombres.length < 5">
+    <!--aqui lo que hace la codicion es ocultar la caja cuando se cumpla 
+    la condicion y este llegue a 5 nombres ingresados-->
     <input type="text" [(ngModel)]="nombreLista">
     <br>
     <button (click)="onButtonClick()">Añadir nombre</button>
