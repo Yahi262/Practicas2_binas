@@ -33,7 +33,7 @@ export class SaludarComponent{
     //y se va a crear un nuevo event emmiter y el tipo de dato que va manejar junto con su constructor
     
     public nombres: Array<string>=[];
-    public nombreLista: string="Yai";
+    public nombreLista: string=" ";
     constructor(){
        /* this.nombre="Yahis"*/ //aqui se esta agregando un valor a nombre
     }
@@ -44,29 +44,9 @@ export class SaludarComponent{
         //cabe hacer mencion que ahora el proceso es a la inversa, que va desde el hijo hacia el padre
     }
 
-    /*let lis = Lis();
-        function lis(nombreLista:string) {
-            if(nombreLista){
-                return nombreLista
-            }else{
-            this.nombreLista='';    
-            }
-        }*/
-
-        /*
-        for (let nombreLista = 0; nombreLista < nombres.string; nombreLista++) {
-            const element = nombres[nombreLista];
-            
-        }*/
     onButtonClick(){
-        this.nombres.push((document.getElementById("n1") as HTMLInputElement).value);
-        //this.nombreLista = '';
-        //;
-        (document.getElementById("n1") as HTMLInputElement).value="";
-        (document.getElementById("n1") as HTMLInputElement).focus();
-    
-    //el getElementById selecciona un elemento del documento ejemplo sintaxis document.getElementById('id_del_el');
-    
+        this.nombres.push(this.nombreLista);
+        this.nombreLista = '';
         console.log(this.nombres)
     }
 }//esto es como para dar a conocer la clase

@@ -1,12 +1,21 @@
+<!--[comentario estilo]-->
+<!--<div>
+    <h1 
+    [style.font-size.%]="holivar.nombreLista.length > 0 ? '200' : '100' "
+    [style.color]="holivar.nombreLista.length > 0 ? 'green' : 'blue' " >
+        //esta clase binding se aplica direcctamente al html y dice que
+        si la condicion es mayor a 0 cambiara de color
+        Componente app.component.html
+    </h1>
+    <p [class.invisible]="holivar.nombreLista.length == 0">
+        //aqui dice que esta clase de binding se va a ejecutar cuando lo que haya en la caja de texto sea diferente a 0
+        y hace referencia a lo que hay en la hoja de estulo del app.component.css
+        Writing: <strong>{{holivar.nombreLista}}</strong>
+    </p> 
+    //esto sirve para ir escriiendo en tiempo y forma
+</div>-->
+
 <!--aqui va el nombre de la etiqueta del ts-->
-<saludar-app [nombre]="name" (saludar)="onSaludar($event)"></saludar-app>
-<!--aqui lo que se hace es darle un valor a la variable
-dando valides al input, ya que esta esperando el dato de este archivo-->
-
-<!--se quita lo que le daba valor a la variable y se agrega la variable que esta en el 
-componente padre, en otras palabras sustituyes rafita por name pero con comillas simples
-y la variable nombre entre corchetes para que funcione el property binding debe estar asi
-recordando que la variable nombre pertenece a saludar.component.ts-->
-
-<!--Ahora se manda a traer el evento en la etiqueta, pero recuerda, cuando lleva parentesis significa que 
-envia información de adentro hacia afuera, y cuando son corchetes es a la inversa-->
+<saludar-app #holivar [nombre]="name" (saludar)="onSaludar($event)"></saludar-app>
+<!--las referencias se usan con #, la puedo usar en todo el htmml y el punto sirve para acceder al objeto
+-->

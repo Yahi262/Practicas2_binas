@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import{FormsModule}from '@angular/forms';
 //import { AppRoutingModule } from './app-routing.module';
 //debes de borrar esto y en el imports
 import { AppComponent } from './app.component';
@@ -16,7 +16,8 @@ import {SaludarComponent } from './componentes/saludar.component';
     SaludarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
